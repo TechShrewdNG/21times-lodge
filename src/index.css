@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 236 72 153; /* pink-500 */
+    --color-primary-light: 244 114 182; /* pink-400 */
+    --color-primary-dark: 219 39 119; /* pink-600 */
+    --color-secondary: 249 168 212; /* pink-200 */
+    --color-accent: 255 228 230; /* pink-50 */
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-pink-500 hover:bg-pink-600 text-white font-medium rounded-lg transition-colors;
+  }
+  .btn-secondary {
+    @apply bg-pink-100 hover:bg-pink-200 text-pink-700 font-medium rounded-lg transition-colors;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-md overflow-hidden transition-all hover:shadow-lg;
+  }
+}
